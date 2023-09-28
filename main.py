@@ -24,7 +24,7 @@ print(f"""
 
 num = random.randint(1, 100)
 #This is an awnser so if you want to see the awnsers just remove the hashtag below<3
-print(num)
+#print(num)
 
 while True:
     guess = int(input('Enter guess: '))
