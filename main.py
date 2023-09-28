@@ -1,4 +1,6 @@
 import random
+import time
+
 import colorama
 from colorama import Back, Fore, Style
 colorama.init(autoreset=True)
@@ -22,12 +24,14 @@ print(f"""
 
 num = random.randint(1, 100)
 #This is an awnser so if you want to see the awnsers just remove the hashtag below<3
-#print(num)
+print(num)
 
 while True:
     guess = int(input('Enter guess: '))
     if guess == num:
         print(Fore.LIGHTGREEN_EX + 'You got it!')
+        print(Fore.RED + 'Exiting in 5 second')
+        time.sleep(5)
         break
     elif guess != num and num > guess:
         print(Fore.YELLOW + "Higher")
